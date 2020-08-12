@@ -1,0 +1,323 @@
+/* ********************* ESTRUTURA DO SITE */ 
+
+* {  /*SELETOR GERAL ONDE SELECIONA TUDO. */
+
+  margin: 0;
+  padding: 0;
+
+}
+
+body {  /* MODIFICAÇÕES DENTRO DO BODY. */
+
+ font-family: "Trebuchet MS", helvetica , sans-serif; 
+ background: #fff url( ../Imagem/fundo.png ) repeat-x;
+
+}
+#principal { /* DIV PRINCIPAL ONDE ESTÁ A ESTRUTURA DO SITE.*/
+
+  width: 750px;
+  margin: 0 auto;
+
+}
+
+#topo { /*DIV TOPO ONDE ESTÁ TODO O TOPO DO SITE*/
+
+  height: 150px;
+  background: url(../Imagem/detalhe-topo.png) no-repeat right top;
+  padding-top: 25px;
+
+}
+.logo {
+
+  width: 152px; 
+  height:66px;
+  background: url(../Imagem/logo.png) no-repeat center;
+  text-indent: -3000px;
+}
+
+/* NAVEGAÇÃO MENU PRINCIPAL */
+a {
+
+ text-decoration: none;
+
+}
+ul {
+
+ margin:0;
+ padding: 0;
+ list-style: none;
+
+}
+
+#topo ul {
+
+ margin-top: 30px; 
+ background: #b10333;
+ float: left;
+
+}
+
+#topo ul li {
+	float: left;
+}
+
+#topo ul a {
+
+ font-size: 0.9em;
+ display: block;
+ padding: 0.5em 1.5em;
+ line-height: 2.1em;
+ text-decoration: none;
+ color: #fff;
+ background: url(../Imagem/divisor.png) no-repeat left center ;
+}
+#topo ul .primeiro a{
+
+	background: none;
+}
+#topo ul a:hover {
+
+ color: #202020;
+
+}
+body.home #nav a#home,
+body.brasil #nav a#brasil,
+body.internacional #nav a#internacional,
+body.economia #nav a#economia,
+body.saude #nav a#saude,
+body.ciencia #nav a#ciencia,
+body.foto #nav a#foto
+ {
+
+	color: #fff;
+	background:#de003e;
+	cursor: text;
+}
+/******************************* LEYOUT DAS 3 COLUNAS DO SITE ******************************/
+
+#conteudo {
+
+ margin-top: 60px;
+ background: #f5f5f5;
+
+}
+ #primario { /*QUANDO O LEYOUT TIVER 3 COLUNAS */
+
+ width: 270px;
+ margin: 0 0 20px 195px;
+ float: left;
+
+ }
+ #duas-colunas #primario { /*QUANDO O LEYOUT TIVER 2 COLUNAS */
+
+ width: 555px;
+
+
+ }
+  #uma-coluna #primario { /*QUANDO O LEYOUT TIVER 1 COLUNAS */
+
+ width: 750px;
+ margin: 0 0 20px 0;
+ 
+
+ }
+ #secundario {
+
+ width: 270px;
+ margin: 0 0 20px 15px;
+ float: left;
+
+ }
+ #lateral {
+
+ width: 180px;
+ margin: 0 0 20px -750px;
+ float: left;
+ }
+/**************************************CAIXA**************************************/
+.caixa {
+
+ background: #f3f3f3 url(../Imagem/fundo-caixa.png);
+ margin:10px 0;
+ padding: 5px;
+}
+h2 {
+ 
+  font-size: 1.2em;
+  background: #294c71;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+
+}
+.caixa-conteudo {
+
+ background: #fff;
+ padding: 5px;
+ margin-top: 5px;
+
+
+}
+/*********************************MENU LATERAL*******************************/
+#lateral ul a {
+
+ font-size: 0.9em;
+ padding: 3px;
+ display: block;
+ line-height: 30px;
+ color: #000;
+ text-decoration: none;
+ border-bottom: 1px solid #f3f3f3;
+ text-align: center;
+
+}
+#lateral a:hover {
+
+ color:#a1a1a1;
+ background: #f9f9f9 url(../Imagem/marcador.png) no-repeat left center;
+ padding-left: 25px;
+
+}
+/******************************* FORMULÁRIO DE CADASTRO *************************/
+
+label {
+
+ display: block;
+ cursor: pointer;
+ text-align: center;
+
+}
+input {
+
+font-size: 0.9em;
+background-color:#fff;
+padding: 5px;
+width: 125px;
+text-align: center;
+margin-left: 13px;
+
+}
+input.submit{
+
+ width: 80px;
+ color: #fff;
+ background-color: #b10333;
+ border: 2px solid #870529;
+ margin-top: 5px;
+ margin-left: 40px;
+
+}
+/***********************************IMAGENS**************************/
+
+img {
+
+  border: 2px solid #dfdfdf;
+}
+img.imgprinc{
+
+ width: 98%;
+ border: 3px solid #dfdfdf;
+
+}
+/****************************************** FORMATANDO CABEÇALHOS*******************/
+
+h3 {
+
+ 
+  font-size: 1.2em;
+  padding: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+.destaque h3 {
+font-size: 1.2em;
+  padding: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  background: #b10333;
+  border: 2px solid #870529;
+  color: #fff;
+
+
+}
+h4 {
+
+ text-align: center;
+
+}
+
+
+
+/**************************PARAGRAFO************************/
+
+p {
+
+ text-align: center;
+
+}
+p a {
+
+ text-align: center;
+ text-decoration: none;
+ color: #b10333;
+}
+p a:hover {
+
+text-decoration: underline;
+
+
+}
+/************************MENU INFERIOR MUNDO E NOTICIAS RECENTES*************************/
+#lista-noticias li {
+
+ padding: 2px;
+ border-bottom: 1px solid #ccc;
+ height: 65px;
+
+
+}
+#lista-noticias li a img {
+
+float: left;
+margin: 5px;
+
+}
+#lista-noticias li a h3 {
+font-size: 0.75em;
+margin-bottom:3px;
+color: #3e7ab9;
+
+}
+#lista-noticias li a p {
+
+  font-size: 0.6em;
+  color: #000;
+
+
+}
+#lista-noticias li:hover {
+ 
+ background: #dfdfdf;
+
+}
+
+
+ /***********************RODAPÉ*****************************/
+
+ #cont-rodape {
+
+ background: #294c71;
+ padding: 20px;
+ 
+
+ }
+ #rodape{
+ 
+ width: 750px;
+ color: #fff;
+ margin: 0 auto;
+
+ }
